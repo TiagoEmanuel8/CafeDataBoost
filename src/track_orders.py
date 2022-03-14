@@ -25,9 +25,8 @@ class TrackOrders:
         conjunto_pratos_cliente = {  # conjunto geral
             item[1] for item in self.list if costumer not in item
         }
-        conjunto_pratos = {
-            item[1] for item in self.list if costumer in item
-        }
+        conjunto_pratos = {item[1] for item in self.list if costumer in item}
+        # complementar de conjuntos
         return conjunto_pratos_cliente - conjunto_pratos
 
     def get_days_never_visited_per_costumer(self, costumer):
