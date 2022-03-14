@@ -1,6 +1,9 @@
 class TrackOrders:
+    def __init__(self):
+        self.list = []
+
     def __len__(self):
-        pass
+        return len(self.list)
 
     def add_new_order(self, costumer, order, day):
         pass
